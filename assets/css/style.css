@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://fastly.picsum.photos/id/881/1500/1000.jpg?blur=10&hmac=tvUB8dkZ1_LtAh6crPP69AlZ3BQUrUU8H-dgSx_wpZM");
+}
+.clock-face {
+    width: 400px;
+    height: 400px;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 480px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .clock-face::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+  }
+.hand {
+    width: 47%;
+    background-color: black;
+    height: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    border-radius: 5px;
+}
+.hour-hand {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 43px;
+    background-color: #800000;
+}
+.min-hand {
+    background-color: #FF0000;
+}
+.second-hand {
+  margin-top: 1px;
+  margin-left: 2px;
+  background-color: #FFFF00;
+}
+.center-clock {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    z-index: 100;
+    background-color: dodgerblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.center-clock-img {
+    z-index: 100;
+    background-color: dodgerblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.clock-title {
+    text-align: center;
+    margin-right: 120px;
+    margin-top: 100px;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
